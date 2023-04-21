@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div.form-student, div.list-student{
+    width: 500px;
+    border: 1px solid #ccc;
+    margin: 25px;
+    padding: 10px;
+    float: left;
+}
+
+div.list-student {
+    width: 650px
+}
+
+div.form-student h3 {
+    padding: 0;
+    margin-top: 0;
+}
+
+label {
+    width: 100px;
+    float: left;
+}
+
+input[type="text"], button {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.gen {
+    margin-left: 115px;
+}
+
+li.btn-next {
+    content: &#x3c;;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+div.button {
+    float: left;
+    margin-left: 700px;
+}
+
+button#active-1, button#active-2 {
+    background-color: aquamarine;
+    border: 1px solid #ccc;
+}
+

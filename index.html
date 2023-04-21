@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="renderStudent()">
+    <div class="form-student">
+        <h3>Thông tin sinh viên</h3>
+        <label for="">Họ và tên</label>
+        <input type="text" id="fullname">
+        <span id="fullname-error" style="color: red;"></span>
+        <br>
+        <label for="">Địa chỉ email</label>
+        <input type="text" id="email">
+        <span id="email-error" style="color: red;"></span>
+        <br>
+        <label for="">Số điện thoại</label>
+        <input type="text" id="phone">
+        <span id="phone-error" style="color: red;"></span>
+        <br>
+        <label for="">Quê quán</label>
+        <input type="text" id="address">
+        <span id="address-error" style="color: red;"></span>
+        <br>
+        <label for="">Giới tính</label>
+        <input type="radio" name="gender" id="male" value="1">Nam
+        <input type="radio" name="gender" id="famale" value="2">Nữ
+        <span id="gender-error" class="gen" style="color: red;"></span>
+        <br>
+
+        
+        <input id="more" type="hidden">
+
+        <label for="">&nbsp;</label>
+        <button id="save" onclick="save()">Lưu lại</button>
+        <button id="update" onclick="update()" style="display: none;">Cập nhật</button>
+    </div>
+
+    <div class="list-student">
+        <h3>Danh sách sinh viên</h3>
+        <table id="grid-students" width="600" border="1" cellpadding="0" cellspacing="0">
+        </table>
+    </div>
+
+    <div class="content_paging">
+        <!-- <ul>
+            <li class=""btn-prev></li>
+            <div class="number-page" id="number-page">
+                <li class="active">
+                    <a href="">1</a>
+                </li>
+                <li class="active-2">
+                    <a href="">2</a>
+                </li>
+            </div>
+            <li class="btn-next"></li>
+        </ul> -->
+        <div class="button">
+            <button id="active-1">1</button>
+            <button id="active-2">2</button>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+</body>
+</html>
+
